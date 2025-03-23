@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2018", // Set ECMAScript target version to ES2018.
+    "allowJs": true, // Allow TypeScript to process JavaScript files.
+    "checkJs": true, // Enable type-checking in JavaScript files.
+    "declaration": true, // Generate TypeScript declaration (.d.ts) files.
+    "emitDeclarationOnly": true, // Only emit .d.ts files, without compiling .js files.
+    "skipLibCheck": true, // Skip type checking of declaration files from node_modules.
+    "moduleResolution": "node", // Use Node.js-style module resolution.
+    "allowSyntheticDefaultImports": true, // Allow default imports even if the module doesn't have a default export.
+    "outDir": "src/types" // Store generated .d.ts files in the src/types directory.
+  },
+  "include": ["src/**/*.js", "src/types"]
+}

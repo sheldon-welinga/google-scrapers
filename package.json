@@ -1,0 +1,36 @@
+{
+  "name": "google-scraper",
+  "descrption": "Collection of google scrapers",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "type": "module",
+  "types": "src/types",
+  "scripts": {
+    "test:google-reviews": "node example/google-reviews.js",
+    "build:types": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^24.4.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.8",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "semi": true,
+    "proseWrap": "preserve",
+    "printWidth": 120,
+    "trailingComma": "all",
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed",
+    "endOfLine": "lf",
+    "bracketSpacing": true
+  }
+}
