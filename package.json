@@ -7,7 +7,10 @@
   "types": "src/types",
   "scripts": {
     "test:google-reviews": "node example/google-reviews.js",
-    "build:types": "tsc"
+    "check:format": "prettier --check \"src/**/*.{js,ts}\"",
+    "format": "prettier --write \"src/**/*.{js,ts}\"",
+    "build:types": "tsc && npm run format",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +22,14 @@
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "**/*.{js,js}": [
+      "pnpm run format"
+    ]
   },
   "prettier": {
     "singleQuote": true,
